@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@repo/ui/button";
-import Balances from '../components/Balances';
+import {Balances} from '../components/Balances';
 
 export default function Home() {
 

@@ -2,7 +2,7 @@ import { atom } from "recoil"
 
 const balanceAtom = atom<number>({
     key: "balance",
-    default: 5
+    default: 23
 })
 
 export default balanceAtom
