@@ -100,3 +100,5 @@ export default function Home() {
 
 
 //just added a comment
+//added one more comment after changing the branch name to main in the workflow
+//and adding the prisma generate script as a build build script
