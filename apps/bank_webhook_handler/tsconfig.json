@@ -3,6 +3,6 @@
   "compilerOptions": {
     "outDir": "dist"
   },
-  "include": ["src/**/*.ts","global.d.ts", "prisma/seed.ts"],
+  "include": ["src","src/**/*.ts","global.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

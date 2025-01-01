@@ -1,20 +1,17 @@
-"use client"
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
+import { authOptions } from "../lib/authConfig";
 
-import { Button } from "@repo/ui/button";
-import {Balances} from '../components/Balances';
-
-export default function Home() {
-
-
-  return (<><div className="bg-red-300 flex justify-around">
-    <div>hello there</div>
-    <div>hello there</div>
-    <div>hello there</div>
-  </div>
-  <Button appName="user-app">what</Button>
-  <div>
-    <Balances/>
-  </div>
-  </>
-  );
+export default async function Home() {
+  const session = await getServerSession(authOptions);
+  if (session?.user) {
+    redirect('/dashboard')
+  } else {
+    redirect('/api/auth/signin')
+  }
 }
+
+
+
+
+

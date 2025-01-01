@@ -13,11 +13,16 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "prisma": "^5.18.0"
+    "@repo/typescript-config": "workspace:*"
   },
   "dependencies": {
-    "@prisma/client": "5.18.0",
-    "@types/node": "^22.4.0"
-  }
+    "@prisma/client": "5.19.1",
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^22.4.0",
+    "bcrypt": "^5.1.1",
+    "prisma": "^5.19.1"
+  },
+  "prisma": {
+        "seed": "pnpx ts-node prisma/seed.ts"
+    }
 }
