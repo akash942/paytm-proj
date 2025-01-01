@@ -100,3 +100,4 @@ export default function Home() {
 
 
 //just added a comment
+//added one more comment after adding prisma generate script as a build script
